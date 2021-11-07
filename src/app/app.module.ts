@@ -3,23 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { StoreModule } from '@ngrx/store';
-import { counterReducer } from './counter.reducer';
-import { MyCounterComponent } from './my-counter/my-counter.component';
 import { BoardComponent } from './board/board.component';
-import { ListComponent } from './list/list.component';
 import { CardComponent } from './card/card.component';
+import { reducers, metaReducers } from './reducers';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyCounterComponent,
     BoardComponent,
-    ListComponent,
     CardComponent
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({ count: counterReducer })
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
