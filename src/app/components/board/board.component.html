@@ -1,0 +1,17 @@
+<div class="board-container">
+    <div class="board-side-bar">
+      <div class="central-icons-wrapper">
+        <nav>
+          <img class="svg imgs img-attention" src="../../../assets/attention-icon.png" alt="1" routerLink="/incidents" routerLinkActive="active"/>
+          <img class="svg imgs img-in-progress" src="../../../assets/in-progress.png" alt="2" routerLink="/in-progress" routerLinkActive="active"/>
+          <img class="svg imgs img-done" src="../../../assets/done.svg" alt="3" routerLink="/done" routerLinkActive="active"/>
+          <img class="svg imgs img-staff" src="../../../assets/users.png" alt="4" routerLink="/staff" routerLinkActive="active"/>
+          <img class="svg imgs img-logout" src="../../../assets/logout.png" alt="5" routerLink="/logout" routerLinkActive="active"/>
+        </nav>
+      </div>
+    </div>
+    <div class="card-area-scrollable">
+      <router-outlet></router-outlet>
+    </div>
+</div>
+

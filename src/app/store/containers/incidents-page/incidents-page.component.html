@@ -1,0 +1,12 @@
+<div class="scrollable-area">
+  <app-card
+    *ngFor="let c of IncidentsCards"
+  ></app-card>
+</div>
+  <app-cards-form></app-cards-form>
+<button (click)="onModal()" class="button button--skoll"><span><span>Add</span></span></button>
+
+
+
+<!--[card] = c-->
+<!--*ngFor="let c of IncidentsCards | async"-->

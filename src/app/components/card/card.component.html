@@ -1,0 +1,21 @@
+
+<div class="main-container">
+  <div class="heading">
+  </div>
+  <div class="cards">
+    <div class="card card-5"
+    [ngClass]="{
+    'card-high-priority': card.isImportant
+    }"
+    >
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">{{card.title}}</h2>
+      <p class="card__apply">
+        <p class="card__link">{{card.area}}</p>
+        <p class="card__link">{{card.date}}</p>
+      <button
+      [disabled]="card.isImportant"
+      >High priority</button>
+    </div>
+  </div>
+</div>
